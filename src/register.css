@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Montserrat:wght@400;600;700&display=swap');
+
+.register{
+    color:white;
+    height:3000px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:0px;
+}
+
+.prio2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+
+form{
+  margin-top: 70px;
+}
+
+.lider{
+  font-family: 'Montserrat', sans-serif;
+  border-color: white;
+  font-size: 64px;
+  text-align: center;
+}
+
+.perso{
+  display : flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center ;
+  gap:20px;
+}
+
+.rigli{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+
+.pers{
+  font-family: 'Montserrat', sans-serif;
+  -coloborderr: white;
+  font-size: 24px;
+  text-align: start;
+}
+
+.personal{
+  font-family: 'Montserrat', sans-serif;
+  -coloborderr: white;
+  font-size: 24px;
+  text-align: start;
+}
+
+.f_input input {
+    height:72px;
+    width:524px;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: white;
+    border-width: 2px;
+    padding: 12px 16px;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.f_input{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.f_input input::placeholder{
+    color: #888;
+    text-align: left;
+}
+
+.select1{
+    height:72px;
+    width:1058px;
+    background-color: black;
+    color:white;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius:40px;
+    padding:20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.select1 option {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.select2{
+    height:72px;
+    width:524px;
+    background-color: black;
+    color:white;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius:40px;
+    padding:20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.select2 option {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+textarea {
+    width: 1058px;
+    height: 400px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 40px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    resize: none;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #888;
+}
+
+.input-flex {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 0 6px;
+}
+
+.input-flex input {
+  flex: 1;              
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 6px;
+  color: transparent;
+}
+
+.register button{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    height:50px;
+    width:130px;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.register button:hover:not(:disabled) {
+    background-color: transparent;
+    transform: translateY(-2px);
+    color: white;
+    border-color: white ;
+}
+
+.register button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.role2{
+  height:300px;
+  width:1058px;
+}
+
+.register button p {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.amine{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.success-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.checkmark-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #4CAF50;
+  position: relative;
+  margin-bottom: 30px;
+  animation: scaleIn 0.6s ease-out;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 45px;
+  border: solid #4CAF50;
+  border-width: 0 4px 4px 0;
+  transform: translate(-50%, -60%) rotate(45deg);
+  animation: drawCheckmark 0.8s ease-out 0.3s both;
+}
+
+.success-title {
+  color: #4CAF50;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  animation: slideUp 0.6s ease-out 0.5s both;
+}
+
+.success-message {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  animation: slideUp 0.6s ease-out 0.7s both;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes drawCheckmark {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%) rotate(45deg) scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -60%) rotate(45deg) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet and smaller desktop screens */
+@media screen and (max-width: 1200px) {
+    .register {
+        padding: 40px 20px;
+        height: auto;
+        min-height: 2400px;
+    }
+    
+    .select1 {
+        width: calc(45% - 10px);
+        min-width: 280px;
+        max-width: 440px;
+    }
+    
+    textarea,
+    .role2 {
+        width: 90%;
+        max-width: 900px;
+    }
+    
+    .f_input {
+        width: 90%;
+        max-width: 900px;
+        justify-content: center;
+    }
+    
+    .f_input input,
+    .select2 {
+        width: calc(45% - 10px);
+        min-width: 280px;
+    }
+    
+    .register button {
+        width: 150px;
+        height: 55px;
+    }
+}
+
+/* Large tablets */
+@media screen and (max-width: 1024px) {
+    .register {
+        height: auto;
+        min-height: 2200px;
+        padding: 60px 30px;
+    }
+    
+    .lider {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    
+    .amine {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    
+    .f_input {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .f_input input,
+    .select1,
+    .select2 {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    textarea,
+    .role2 {
+        width: 90%;
+        max-width: 600px;
+    }
+}
+
+/* Standard tablets */
+@media screen and (max-width: 768px) {
+    .register {
+        height: auto;
+        min-height: 2000px;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+    
+    .lider {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    
+    .amine {
+        font-size: 22px;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+    
+    .pers {
+        font-size: 20px;
+        text-align: center;
+        margin: 20px 0 15px 0;
+    }
+    
+    .f_input {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .f_input input,
+    .select1,
+    .select2 {
+        width: 95%;
+        max-width: 350px;
+        height: 55px;
+        font-size: 14px;
+        padding: 15px 18px;
+    }
+    
+    textarea,
+    .role2 {
+        width: 95%;
+        max-width: 450px;
+        height: 200px;
+        font-size: 14px;
+        padding: 15px;
+    }
+    textarea
+     {
+        height: 300px;
+    }
+    .role2{
+      height:200px;
+    }
+    
+    .register button {
+        width: 140px;
+        height: 50px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    
+    .prio2 {
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .priorities,
+    .personal,
+    .more {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tit {
+        font-size: 18px;
+        text-align: center;
+        margin: 15px 0 10px 0;
+    }
+    
+    .input-flex {
+        width: 95%;
+        max-width: 450px;
+    }
+    
+    .arrow-btn {
+        color: white;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+}
+
+/* Large mobile phones */
+@media screen and (max-width: 640px) {
+    .register {
+        padding: 30px 15px;
+        min-height: 1800px;
+    }
+    
+    .lider {
+        font-size: 32px;
+    }
+    
+    .amine {
+        font-size: 20px;
+    }
+    
+    .f_input input,
+    .select1,
+    .select2,
+    textarea,
+    .role2 {
+        width: 100%;
+        max-width: 380px;
+        height: 50px;
+        font-size: 13px;
+        padding: 12px 15px;
+    }
+    
+    textarea
+     {
+        height: 300px;
+    }
+    .role2{
+      height:200px;
+    }
+    
+    .register button {
+        width: 130px;
+        height: 45px;
+        font-size: 13px;
+    }
+}
+
+/* Standard mobile phones */
+@media screen and (max-width: 480px) {
+    .register {
+        padding: 25px 12px;
+        min-height: 1700px;
+        gap: 20px;
+    }
+    
+    .lider {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    .amine {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .pers {
+        font-size: 18px;
+        margin: 15px 0 10px 0;
+    }
+    
+    .tit {
+        font-size: 16px;
+        margin: 10px 0 8px 0;
+    }
+    
+    .f_input {
+        gap: 12px;
+    }
+    
+    .f_input input,
+    .select1,
+    .select2,
+    textarea,
+    .role2 {
+        width: 100%;
+        max-width: 320px;
+        height: 45px;
+        font-size: 12px;
+        padding: 10px 12px;
+        border-radius: 25px;
+    }
+    
+    textarea,
+    .role2 {
+        height: 120px;
+        border-radius: 20px;
+    }
+    
+    .register button {
+        width: 120px;
+        height: 42px;
+        font-size: 12px;
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+    
+    .prio2 {
+        gap: 12px;
+    }
+    
+    .input-flex {
+        max-width: 320px;
+    }
+    
+    .arrow-btn {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+    
+    .register input::placeholder,
+    textarea::placeholder {
+        font-size: 11px;
+    }
+    
+    .success-animation {
+        padding: 30px 15px;
+    }
+    
+    .checkmark-circle {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .checkmark {
+        width: 20px;
+        height: 35px;
+        border-width: 0 3px 3px 0;
+    }
+    
+    .success-title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+}
+
+/* Small mobile phones */
+@media screen and (max-width: 375px) {
+    .register {
+        padding: 20px 10px;
+        min-height: 1600px;
+    }
+    
+    .lider {
+        font-size: 24px;
+    }
+    
+    .amine {
+        font-size: 16px;
+    }
+    
+    .pers {
+        font-size: 16px;
+    }
+    
+    .tit {
+        font-size: 14px;
+    }
+    
+    .f_input input,
+    .select1,
+    .select2,
+    textarea,
+    .role2 {
+        width: 100%;
+        max-width: 280px;
+        height: 40px;
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+    
+    textarea,
+    .role2 {
+        height: 100px;
+    }
+    
+    .register button {
+        width: 110px;
+        height: 38px;
+        font-size: 11px;
+        border-radius: 18px;
+    }
+    
+    .input-flex {
+        max-width: 280px;
+    }
+    
+    .arrow-btn {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+    
+    .success-title {
+        font-size: 20px;
+    }
+}

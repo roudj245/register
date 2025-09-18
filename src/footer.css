@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Montserrat:wght@400;600;700&display=swap');
+
+section {
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 50px;
+    padding: 2rem 0;
+    margin-left: 0px;
+}
+
+footer {
+    height: auto;
+}
+
+.maddi {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+#forchita img {
+    width: 300px;
+    height: 300px;
+    border: none;
+}
+
+#one {
+    width: 8.375rem;
+    height: auto;
+}
+
+#one a {
+    text-decoration: none;
+    color: white;
+}
+
+.ghano p {
+    margin: 11.2% 0;
+}
+
+#zyada {
+    font-size: 0.9rem;
+}
+
+#prblm #boutton {
+    font-size: 0.75rem;
+    background: #5286AE;
+    border-radius: 2.5rem;
+    text-align: center;
+    padding: 0.6rem 1.5rem;
+    color: black;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+#prblm a {
+    text-decoration: none;
+}
+
+#three {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+#three img {
+    margin: 6px;
+    width: 24px;
+    height: 24px;
+}
+
+.qq {
+    width: 0.25rem;
+    height: 12.25rem;
+    margin-top: 10px;
+}
+
+#prblm {
+    margin-right: 105px;
+}
+
+#ltaht {
+    margin-top: 0.79%;
+    margin-bottom: 0.79%;
+    font-size: 0.625rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+    section{
+        margin-left: 0px;
+    }
+  .maddi {
+    justify-content: center;
+    gap: 2rem;
+  }
+  .qq {
+    display: none; 
+  }
+}
+
+@media (max-width: 768px) {
+  .maddi {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+  }
+  #forchita img {
+    width: 230px;
+    height: 9%;
+  }
+  #one {
+    margin: 1rem 0;
+  }
+  #three {
+    justify-content: center;
+  }
+  #prblm {
+    margin: 0;
+  }
+   section{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+     section{
+        margin-left: 0px;
+    }
+  #one p {
+    font-size: 0.85rem;
+    margin: 0.5rem 0;
+  }
+  #zyada {
+    font-size: 0.8rem;
+  }
+  #prblm #boutton {
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+  }
+  #three img {
+    width: 20px;
+    height: 20px;
+  }
+}
