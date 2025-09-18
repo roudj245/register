@@ -3,7 +3,7 @@ import insta from './assets/instagram (1).png'
 import ytb from './assets/youtube (2).png'
 import facebook from './assets/facebook (1).png'
 import tik from './assets/tic-tac.png'
-import './footer.css';
+import './footer1.css';
 import vector from './assets/Vector 22 (3).png'
 import f_logo from './assets/without-bg-06.png'
 
@@ -20,11 +20,11 @@ export default function Footer() {
 
           <li className='ghano'>
             <div id="one">
-              <a href ='#home'><p>HOME</p></a>
-              <a href ='#about' ><p>ABOUT</p></a>
-              <a href ='#leaders'><p>LEADERS</p></a>
-              <a href ='#departement'><p>DEPARTEMENT</p></a>
-              <a href = '#events'><p>UP-EVENTS</p></a>
+              <a href ='https://epstimisignum.vercel.app/'><p>HOME</p></a>
+              <a href ='https://epstimisignum.vercel.app/' ><p>ABOUT</p></a>
+              <a href ='https://epstimisignum.vercel.app/'><p>LEADERS</p></a>
+              <a href ='https://epstimisignum.vercel.app/'><p>DEPARTEMENT</p></a>
+              <a href = 'https://epstimisignum.vercel.app/'><p>UP-EVENTS</p></a>
               <a href ='#register'><p>JOIN ESC</p></a>
             </div>
           </li>

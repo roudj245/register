@@ -1,5 +1,5 @@
 
-import Footer from './footer';
+import Footer from './footer1';
 import Register from './register';
 
 function App() {
