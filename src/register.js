@@ -162,7 +162,6 @@ export default function Register() {
                 <input 
                   required 
                   type='text' 
-                  pattern="[A-Za-z]+"
                   placeholder="First name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
@@ -171,7 +170,6 @@ export default function Register() {
                 <input 
                   required 
                   type="text"
-                  pattern="[A-Za-z]+"
                   placeholder="Last name"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
@@ -314,7 +312,7 @@ export default function Register() {
                   <option value="finance">Finance</option>
                   <option value="external">External Relations</option>
                   <option value="edit">Video Editing</option>
-                  <option value="Multi">Multimidia</option>
+                  <option value="Multi">Media Management</option>
                 </select>
                 <textarea 
                   className="role2"
@@ -346,7 +344,7 @@ export default function Register() {
                   <option value="finance">Finance</option>
                   <option value="external">External Relations</option>
                   <option value="edit">Video Editing</option>
-                  <option value="Multi">Multimidia</option>
+                  <option value="Multi">Media Management</option>
                 </select>
                 <textarea 
                   className="role2"
@@ -378,7 +376,7 @@ export default function Register() {
                   <option value="finance">Finance</option>
                   <option value="external">External Relations</option>
                   <option value="edit">Video Editing</option>
-                  <option value="Multi">Multimidia</option>
+                  <option value="Multi">Media Management </option>
                 </select>
                 <textarea 
                   className="role2"
