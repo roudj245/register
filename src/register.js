@@ -4,7 +4,7 @@ import "./register.css";
 const sendRegistration = async (data) => {
   try {
     console.log("🚀 Sending registration data:", data);
-   
+    
     const response = await fetch("https://backend-esc.onrender.com/user", {
       method: "POST",
       headers: {
@@ -43,7 +43,7 @@ const sendRegistration = async (data) => {
     };
   } catch (error) {
     console.error("❌ Network error:", error);
-   
+    
     if (error.name === 'TypeError' && error.message.includes('fetch')) {
       return {
         success: false,
@@ -51,7 +51,7 @@ const sendRegistration = async (data) => {
         networkError: true,
       };
     }
-   
+    
     return {
       success: false,
       error: error.message || "Network error. Please check your connection.",
@@ -82,9 +82,9 @@ export default function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-   
+    
     if (isSubmitting) return;
-   
+    
     setIsSubmitting(true);
 
     try {
@@ -157,20 +157,19 @@ export default function Register() {
         <form onSubmit={handleSubmit}>
           <div className="personal">
             <h3 className="pers">Personal Informations : </h3>
-
             <div className="perso">
               <div className='f_input'>
-                <input
-                  required
-                  type='text'
+                <input 
+                  required 
+                  type='text' 
                   pattern="[A-Za-z]+"
                   placeholder="First name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                   disabled={isSubmitting}
                 />
-                <input
-                  required
+                <input 
+                  required 
                   type="text"
                   pattern="[A-Za-z]+"
                   placeholder="Last name"
@@ -179,19 +178,19 @@ export default function Register() {
                   disabled={isSubmitting}
                 />
               </div>
-             
+              
               <div className='f_input'>
-                <input
-                  required
-                  type='email'
+                <input 
+                  required 
+                  type='email' 
                   placeholder="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isSubmitting}
                 />
-                <input
-                  required
-                  type='tel'
+                <input 
+                  required 
+                  type='tel' 
                   placeholder="phone number"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
@@ -200,17 +199,17 @@ export default function Register() {
               </div>
 
               <div className='f_input'>
-                <input
-                  required
-                  type='date'
+                <input 
+                  required 
+                  type='date' 
                   placeholder="date de naissance"
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
                   disabled={isSubmitting}
                 />
-                <input
-                  required
-                  type='text'
+                <input 
+                  required 
+                  type='text' 
                   placeholder="Discord Id"
                   value={discord}
                   onChange={(e) => setDiscord(e.target.value)}
@@ -265,9 +264,9 @@ export default function Register() {
                   </div>
                 )}
 
-                <input
-                  required
-                  type='text'
+                <input 
+                  required 
+                  type='text' 
                   placeholder="Institution"
                   value={institution}
                   onChange={(e) => setInstitution(e.target.value)}
@@ -275,19 +274,18 @@ export default function Register() {
                 />
               </div>
 
-              <textarea
+              <textarea 
                 className="role2"
-                required
-                type='role'
+                required 
+                type='role' 
                 placeholder="Have you ever joined a club? if yes Specify name and role."
                 value={experience} // Changed from role to experience
                 onChange={(e) => setExperience(e.target.value)} // Changed from setRole to setExperience
-
                 disabled={isSubmitting}
               />
 
-              <textarea
-                required
+              <textarea 
+                required 
                 placeholder="What motivate you to join us"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -318,14 +316,13 @@ export default function Register() {
                   <option value="edit">Video Editing</option>
                   <option value="Multi">Multimidia</option>
                 </select>
-                <textarea
+                <textarea 
                   className="role2"
-                  required
-                  type='role'
+                  required 
+                  type='role' 
                   placeholder="Why?"
                   value={priorities[0].answer} // Changed from reason to answer
                   onChange={(e) => updatePriority(0, "answer", e.target.value)} // Changed from reason to answer
-
                   disabled={isSubmitting}
                 />
               </div>
@@ -351,10 +348,10 @@ export default function Register() {
                   <option value="edit">Video Editing</option>
                   <option value="Multi">Multimidia</option>
                 </select>
-                <textarea
+                <textarea 
                   className="role2"
-                  required
-                  type='role'
+                  required 
+                  type='role' 
                   placeholder="Why?"
                   value={priorities[1].answer} // Changed from reason to answer
                   onChange={(e) => updatePriority(1, "answer", e.target.value)} // Changed from reason to answer
@@ -383,10 +380,10 @@ export default function Register() {
                   <option value="edit">Video Editing</option>
                   <option value="Multi">Multimidia</option>
                 </select>
-                <textarea
+                <textarea 
                   className="role2"
-                  required
-                  type='role'
+                  required 
+                  type='role' 
                   placeholder="Why?"
                   value={priorities[2].answer} // Changed from reason to answer
                   onChange={(e) => updatePriority(2, "answer", e.target.value)} // Changed from reason to answer
@@ -394,10 +391,10 @@ export default function Register() {
                 />
               </div>
             </div>
-          </div>
-         
-          <button
-            className='join1'
+          </div> 
+          
+          <button 
+            className='join1' 
             type="submit"
             disabled={isSubmitting}
           >
