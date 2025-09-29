@@ -345,39 +345,38 @@ textarea::placeholder {
 }
 
 @keyframes scaleIn {
-  from {
+from {
     transform: scale(0);
     opacity: 0;
-  }
-  to {
+}
+to {
     transform: scale(1);
     opacity: 1;
-  }
+}
 }
 
 @keyframes drawCheckmark {
-  from {
+from {
     opacity: 0;
     transform: translate(-50%, -60%) rotate(45deg) scale(0);
-  }
-  to {
+}
+to {
     opacity: 1;
     transform: translate(-50%, -60%) rotate(45deg) scale(1);
-  }
+}
 }
 
 @keyframes slideUp {
-  from {
+from {
     opacity: 0;
     transform: translateY(20px);
-  }
-  to {
+}
+to {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 }
 
-/* Tablet and smaller desktop screens */
 @media screen and (max-width: 1200px) {
     .register {
         padding: 40px 20px;
@@ -414,7 +413,7 @@ textarea::placeholder {
     }
 }
 
-/* Large tablets */
+
 @media screen and (max-width: 1024px) {
     .register {
         min-height: 100vh;
@@ -503,11 +502,11 @@ textarea::placeholder {
         padding: 15px;
     }
     textarea
-     {
+    {
         height: 300px;
     }
     .role2{
-      height:200px;
+    height:200px;
     }
     
     .register button {
@@ -578,11 +577,11 @@ textarea::placeholder {
     }
     
     textarea
-     {
+    {
         height: 300px;
     }
     .role2{
-      height:200px;
+    height:200px;
     }
     
     .register button {

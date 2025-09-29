@@ -1,11 +1,11 @@
 
 import Footer from './footer1';
-import Register from './register';
+import Closed from './closed';
 
 function App() {
   return (
     <div className="App">
-      <Register/>
+      <Closed/>
       <Footer/>
       
     </div>
