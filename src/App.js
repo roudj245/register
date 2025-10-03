@@ -6,7 +6,7 @@ import Register from './register.js'
 function App() {
   return (
     <div className="App">
-      <Register/>
+      <Closed/>
       <Footer/>
       
     </div>
